@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="play">&#xe609;</string>
+    <string name="pause">&#xe673;</string>
+    <string name="next">&#xe7a5;</string>
+    <string name="last">&#xe78a;</string>
+    <string name="list">&#xe6a7;</string>
+    <string name="danqu">&#xe6a2;</string>
+    <string name="shunxv">&#xe630;</string>
+    <string name="suiji">&#xe6a0;</string>
+    <string name="add">&#xe631;</string>
+    <string name="back">&#xe608;</string>
+    <string name="cha">&#xe602;</string>
+    <string name="edit">&#xe67f;</string>
+    <string name="menu">&#xe601;</string>
+    <string name="more">&#xe607;</string>
+    <string name="xia">&#xe603;</string>
+    <string name="search">&#xe62b;</string>
+    <string name="dou">&#xe8db;</string>
+    <string name="net">&#xe60b;</string>
+    <string name="like">&#xe624;</string>
+    <string name="unlike">&#xe61f;</string>
+    <string name="comment">&#xe626;</string>
+    <string name="zan">&#xe606;</string>
+    <string name="play1">&#xe688;</string>
+
+    <string name="app_name">compose</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_music">musicActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_play">ActivityPlay</string>
+    <string name="title_activity_webview">webviewActivity</string>
+    <string name="title_activity_piano_window">pianoWindowActivity</string>
+</resources>

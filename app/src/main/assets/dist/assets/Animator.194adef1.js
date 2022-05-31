@@ -1,0 +1,1 @@
+class i{constructor(t){this.duration=t,this.updateCb=()=>{},this.endedCb=()=>{},this.startTime=0}start(){this.startTime=new Date().getTime(),this.recursion()}recursion(){let t=new Date().getTime()-this.startTime;t<this.duration?(requestAnimationFrame(this.recursion.bind(this)),this.updateCb(t)):this.endedCb()}}export{i as A};

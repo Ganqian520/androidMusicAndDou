@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ganqian.compose">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.ganqian.aaa.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Compose"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.ganqian.pianoWindow.pianoWindowActivity"
+            android:exported="false"
+            android:label="pianoWindow"
+            android:theme="@style/Theme.Compose" />
+        <activity
+            android:name="com.ganqian.webview.WebviewActivity"
+            android:exported="true"
+            android:label="@string/title_activity_webview"
+            android:theme="@style/Theme.Compose">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.ganqian.music.MusicActivity"
+            android:exported="true"
+            android:label="@string/title_activity_music"
+            android:theme="@style/Theme.Compose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ganqian.video.VideoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_video"
+            android:theme="@style/Theme.Compose" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101992888" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.ganqian.music.service.ServicePlayer"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.ganqian.video.page.floatingWindow.ServiceFloatVideo"
+            android:enabled="true"
+            android:exported="false" />
+        <service android:name="com.ganqian.music.page.floatingWindow.ServiceListenMusic"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
